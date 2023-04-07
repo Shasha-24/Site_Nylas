@@ -1,0 +1,114 @@
+<!-- ======================================================= -->
+<!-- Page Nos téléphones (liste les téléphones) -->
+<!-- ======================================================= -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <title> Nylas </title>
+</head>
+
+
+
+<!-- ======================================================= -->
+<!-- Barre de navigation entre les pages : -->
+<!-- ======================================================= -->
+
+
+
+<body>
+    <header>
+        <div class="principale">
+            <div id="logo">
+                <a id="logo" href="/"> <span id="logo">N</span>ylas</a>
+            </div>
+            <ul class="navbar">
+                <li>
+                    <a href="/">Accueil</a>
+                </li>
+                <li>
+                    <a href="/nosproduits">Nos produits</a>
+                </li>
+                <li>
+                    <a href="/panier">Panier</a>
+                </li>
+                <li>
+                    <a href="/formulaire">Se connecter/s'inscrire</a>
+                </li>
+                <li>
+                    <a href="/nouscontacter">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- ======================================================= -->
+    <!-- Code : -->
+    <!-- ======================================================= -->
+
+    <div class="login-banner">
+        <h1 class="page title">
+            Nos téléphones
+        </h1>
+    </div>
+    <div class="container">
+        <% produits.forEach((produit)=> { %>
+
+
+
+
+            <div class="box">
+                <img src="<%= produit.image %>">
+                <p>
+                    <%= produit.NAME %>
+                </p>
+                <form action="/panier" method="post">
+                    <input type="submit" value="Ajouter au panier" class="telboutton">
+                </form>
+            </div>
+            <% }) %>
+    </div>
+
+
+    <!-- ======================================================= -->
+    <!-- Footer : -->
+    <!-- ======================================================= -->
+
+
+
+    <footer>
+        <div class="login-banner">
+            </h1>
+            <div class="fin">
+                <ul class="finbar">
+                    <li>
+                        <a href="/nouscontacter">Nous contacter</a>
+                    </li>
+                    <li>
+                        <a href="#">Notre Newsletters</a>
+                    </li>
+                    <li>
+                        <a href="/formulaire">Rejoignez-nous</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="arrowProduits">
+        <a href="#" title="Back to Top"><img class="span" src="svg/chevron-up-outline.svg" alt="Flechetop" /></a>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- ======================================================= -->
+<!-- Fin :) -->
+<!-- ======================================================= -->

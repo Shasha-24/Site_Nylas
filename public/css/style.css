@@ -1,0 +1,733 @@
+/*-------------------------------------*/
+/*CSS GLOBAL*/
+/*CSS de tout le site, de toutes les pages*/
+/*-------------------------------------*/
+
+
+
+/*-------------------------------------*/
+/* Style d'écriture */
+/*-------------------------------------*/
+
+
+
+@font-face {
+    font-family: 'harukaze';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../asset/Harukaze.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Cherry';
+    font-style: normal;
+    font-weight: bolder;
+    src: url(../asset/Cherry\ Monospace-Light.ttf) format('truetype');
+}
+
+.pascolle {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+/*-------------------------------------*/
+/*accueil*/
+/*-------------------------------------*/
+
+
+
+.principale {
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cherry";
+    flex-shrink: 3;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    flex-shrink: 3;
+    flex-grow: 1;
+    transition: 0.6s ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+header {
+    background-color: #f0f8f7;
+    padding: 15px;
+    height: 90px;
+}
+
+.contenu {
+    position: relative;
+    bottom: 20%;
+    color: rgb(4, 0, 0);
+}
+
+.topleft {
+    position: absolute;
+    top: 20px;
+    right: 37%;
+    height: 100px;
+    color: white;
+    font-family: "cherry";
+    font-size: 6rem;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 768px) {
+    .topleft {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topleft {
+        font-size: 3rem;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+#logo {
+    font-size: 80px;
+    font-family: "harukaze";
+}
+
+.finbar {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    flex-shrink: 3;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #f0f8f7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.Services {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    transition: 0, 3 all;
+    margin-bottom: 6%;
+}
+
+
+
+/*-------------------------------------*/
+/* Objet à vendre*/
+/*-------------------------------------*/
+
+
+
+.telephone:hover {
+    width: 21%;
+    height: 9%;
+    background: #a2856c;
+    transition: width 1s;
+    box-shadow: rgb(0, 0, 0);
+}
+
+.telephone {
+    width: 20%;
+    height: 8%;
+    border: 1px solid black;
+    background: #CFB9A5;
+    padding: 7%;
+    margin: 2%;
+    border-radius: 10px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgb(152, 152, 155);
+    transition: box-shadow .3s;
+    margin-left: 10%;
+    margin-bottom: 7%
+}
+
+.text-telephone {
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.tablette:hover {
+    width: 51%;
+    height: 65%;
+    background: #957A62;
+    transition: width 1s;
+    box-shadow: rgb(0, 0, 0);
+}
+
+.tablette {
+    width: 47.24%;
+    height: 70%;
+    border: 1px solid black;
+    background: #CFB9A5;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 10px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgb(152, 152, 155);
+    transition: box-shadow .3s;
+    margin-left: 10%;
+    margin-bottom: 3%
+}
+
+.text-tablette {
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.montre:hover {
+    width: 51%;
+    height: 65%;
+    background: #957A62;
+    transition: width 1s;
+    box-shadow: rgb(0, 0, 0);
+}
+
+.montre {
+    width: 47.24%;
+    height: 53%;
+    border: 1px solid black;
+    background: #CFB9A5;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 10px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgb(152, 152, 155);
+    transition: box-shadow .3s;
+    margin-left: 10%;
+    margin-bottom: 7%
+}
+
+.text-montre {
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.tablette-montre {
+    gap: 20%;
+    margin: 1.45%;
+}
+
+.nouveaute {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.item:hover {
+    transition: 0.3 all;
+    box-shadow: -8px 8px 2px 1px rgb(0, 0, 0, .2);
+}
+
+
+
+/*-------------------------------------*/
+/* Bannière */
+/*-------------------------------------*/
+
+
+
+.login-banner {
+    background-color: #eee;
+    padding: 0.8rem;
+}
+
+
+
+/*-------------------------------------*/
+/* Se connecter et s'inscrire */
+/*-------------------------------------*/
+
+
+
+.form-structor {
+    position: relative;
+    height: 450px;
+    width: 500px;
+    background-color: #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 34%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+.form-title {
+    margin-left: 170px;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.sinscrire-bouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.box4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.box5 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.connecter-bouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.finbar-page1 {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    flex-shrink: 3;
+    flex-grow: 1;
+}
+
+.submit-btn {
+    background-color: #b0947c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #957A62;
+}
+
+
+
+/*-------------------------------------*/
+/*nous contacter*/
+/*-------------------------------------*/
+
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.nouscontacter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    flex-basis: 48%;
+}
+
+.input-form#email {
+    margin-left: 48%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.button-form {
+    background-color: #b0947c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.button-form:hover {
+    background-color: #957A62;
+}
+
+.nouscontacter label[for="email"] {
+    flex-basis: 100%;
+}
+
+
+
+/*-------------------------------------*/
+/*panier*/
+/*-------------------------------------*/
+
+
+
+.panier {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.panier h2 {
+    margin-bottom: 10px;
+}
+
+.panier ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panier li {
+    margin-bottom: 10px;
+}
+
+.panier .total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.panier button {
+    margin-top: 20px;
+    background-color: #b0947c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.panier button:hover {
+    background-color: #957A62;
+}
+
+
+/*-------------------------------------*/
+/*nos produits*/
+/*-------------------------------------*/
+
+
+.liste-produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.produit {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.produit:hover {
+    background-color: #dcd6d6;
+    transition: width 1s;
+    box-shadow: 10px 10px 5px rgb(116, 116, 119);
+    transition: box-shadow 0.3s;
+}
+
+.produit button {
+    background-color: #b0947c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    top: 650px;
+}
+
+.produit button:hover {
+    background-color: #957A62;
+}
+
+/*-------------------------------------*/
+/* Téléphone */
+/*-------------------------------------*/
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 90px;
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+.box {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.box:hover {
+    background-color: #dcd6d6;
+    transition: width 1s;
+    box-shadow: 10px 10px 5px rgb(116, 116, 119);
+    transition: box-shadow 0.3s;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.telboutton {
+    background-color: #b0947c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    top: 650px;
+}
+
+.telboutton :hover {
+    background-color: #957A62;
+}
+
+/*-------------------------------------*/
+/* Phone */
+/*-------------------------------------*/
+
+
+
+@media (max-width: 600px) {
+    .principale {
+        max-width: 170%;
+    }
+
+    .contenu {
+        width: 140%;
+    }
+}
+
+
+
+/*-------------------------------------*/
+/* PC*/
+/*-------------------------------------*/
+
+
+
+@media (min-width: 600px) {
+
+    .principale {
+        max-width: 90%;
+    }
+
+    .contenu {
+        width: 100%;
+    }
+}
+
+
+
+/*-------------------------------------*/
+/* Boutons pour revenir en haut */
+/*-------------------------------------*/
+
+
+
+.arrowIndex {
+    position: absolute;
+    bottom: 10px;
+    left: 1400px;
+    z-index: 9;
+}
+
+.arrowIndex a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #b0947c;
+    display: block;
+    border-radius: 30px;
+}
+
+.arrowIndex a span {
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 39px;
+    cursor: pointer;
+}
+
+.arrowProduits {
+    position: absolute;
+    bottom: 10px;
+    left: 1400px;
+    z-index: 9;
+}
+
+.arrowProduits a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #b0947c;
+    display: block;
+    border-radius: 30px;
+}
+
+.arrowProduits a span {
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 39px;
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+/*Nylas N16 */
+/*-------------------------------------*/
+
+
+ 
+/*-------------------------------------*/
+/*End :)*/
+/*-------------------------------------*/
