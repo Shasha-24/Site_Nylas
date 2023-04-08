@@ -68,12 +68,14 @@
                 <h2>Votre panier :</h2>
                 </br>
                 <ul>
-                    <li>Produit 1 - Prix : 352,58€</li>
-                    <li>Produit 2 - Prix : 90€</li>
-                    <li>Produit 3 - Prix : 500€</li>
+                    <% produits.forEach((produit)=> { %>
+                        <li>
+                            <%= produit.NAME%> - Prix : <%= produit.price%>€
+                        </li>
+                        <% }) %>
                 </ul>
                 <div class="total">
-                    Total : 942,58€
+                    Total : <%= price%>€
                 </div>
                 <button>Passer commande</button>
             </div>
@@ -105,6 +107,9 @@
                 </div>
             </div>
         </footer>
+        <div class="arrowIndex">
+            <a href="#" title="Back to Top"><img class="span" src="svg/chevron-up-outline.svg" alt="Flechetop" /></a>
+        </div>
     </body>
 </body>
 

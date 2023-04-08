@@ -68,8 +68,9 @@
                 <p>
                     <%= produit.NAME %>
                 </p>
-                <form action="/panier" method="post">
-                    <input type="submit" value="Ajouter au panier" class="telboutton">
+                <form action="/ajoutpanier" method="post">
+                    <p>ajouter au panier</p>
+                    <input type="submit" name="product_id" value="<%= produit.id %>" class="telboutton">
                 </form>
             </div>
             <% }) %>
