@@ -99,6 +99,7 @@ app.get('/nouscontacter', function (httpRequest, httpResponse, next) {
     httpResponse.render('pages/nouscontacter')
 });
 
+
 app.get('/panier', function (httpRequest, httpResponse, next) {
     var produits = []
     var price = 0
@@ -134,8 +135,6 @@ app.post('/ajoutpanier', function (httpRequest, httpResponse, next) {
         }
     )
 })
-
-
 
 
 app.listen('3003');
